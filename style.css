@@ -100,6 +100,11 @@ form .btn-login {
     }
 }
 
+.form-hide {
+  animation: down 500ms;
+  animation-fill-mode: forwards;
+}
+
 @keyframes move {
     from {
         opacity: 0;
@@ -109,5 +114,15 @@ form .btn-login {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+@keyframes down {
+
+  from  {
+     transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
 }
 
